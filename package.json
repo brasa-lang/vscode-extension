@@ -1,0 +1,42 @@
+{
+  "name": "brasa",
+  "publisher": "brasa-lang",
+  "displayName": "Brasa",
+  "description": "Language support for Brasa",
+  "version": "0.0.1",
+  "icon":"./icons/brasa.png",
+  "engines": {
+    "vscode": "^1.115.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/brasa-lang/vscode-extension"
+  },
+  "homepage": "https://github.com/brasa-lang/vscode-extension",
+  "contributes": {
+    "languages": [{
+      "id": "brasa",
+      "aliases": ["Brasa", "brasa"],
+      "extensions": [".brasa"],
+      "configuration": "./language-configuration.json",
+      "icon": {
+        "light": "./icons/brasa.svg",
+        "dark": "./icons/brasa.svg"
+      }
+    }],
+    "grammars": [{
+      "language": "brasa",
+      "scopeName": "source.brasa",
+      "path": "./syntaxes/brasa.tmLanguage.json"
+    }],
+    "snippets": [
+      {
+        "language": "brasa", 
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}

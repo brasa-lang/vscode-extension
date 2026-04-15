@@ -1,0 +1,11 @@
+{
+  "enquanto": {
+    "prefix": "enquanto",
+    "body": [
+      "enquanto($1){",
+      "\t$2",
+      "}"
+    ],
+    "description": "Standard while loop"
+  }
+}
