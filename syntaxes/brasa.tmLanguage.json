@@ -5,11 +5,13 @@
 		{ "include": "#comments" },
 		{ "include": "#strings" },
 		{ "include": "#keywords" },
+		{ "include": "#builtins" },
 		{ "include": "#constants" },
 		{ "include": "#types" },
 		{ "include": "#functions" },
 		{ "include": "#numbers" },
-		{ "include": "#operators" }
+		{ "include": "#operators" },
+		{ "include": "#punctuation" }
 	],
 	"repository": {
 		"comments": {
@@ -38,6 +40,14 @@
 				{
 					"name": "storage.type.function.brasa",
 					"match": "\\bfunc\\b"
+				}
+			]
+		},
+		"builtins": {
+			"patterns": [
+				{
+					"name": "support.function.builtin.brasa",
+					"match": "\\b(diga|leia)\\b"
 				}
 			]
 		},
@@ -104,7 +114,35 @@
 				},
 				{
 					"name": "keyword.operator.arithmetic.brasa",
-					"match": "\\+\\+|--|\\+|\\-|\\*|/"
+					"match": "\\+\\+|--|\\+|\\-|\\*|/|->"
+				},
+				{
+					"name": "keyword.operator.type.brasa",
+					"match": "\\?"
+				}
+			]
+		},
+		"punctuation": {
+			"patterns": [
+				{
+					"name": "punctuation.terminator.brasa",
+					"match": ";"
+				},
+				{
+					"name": "punctuation.separator.brasa",
+					"match": ","
+				},
+				{
+					"name": "punctuation.section.block.brasa",
+					"match": "\\{|\\}"
+				},
+				{
+					"name": "punctuation.section.parens.brasa",
+					"match": "\\(|\\)"
+				},
+				{
+					"name": "punctuation.section.brackets.brasa",
+					"match": "\\[|\\]"
 				}
 			]
 		}

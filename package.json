@@ -3,7 +3,7 @@
   "publisher": "brasa-lang",
   "displayName": "Brasa",
   "description": "Language support for Brasa",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "icon":"./icons/brasa.png",
   "engines": {
     "vscode": "^1.115.0"

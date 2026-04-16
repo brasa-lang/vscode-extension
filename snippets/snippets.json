@@ -1,11 +1,36 @@
 {
-  "enquanto": {
+  "Laço Enquanto": {
     "prefix": "enquanto",
     "body": [
-      "enquanto($1){",
-      "\t$2",
+      "enquanto (${1:condicao}) {",
+      "\t${0:// código}",
       "}"
     ],
-    "description": "Standard while loop"
+    "description": "Cria um laço de repetição enquanto a condição for verdadeira."
+  },
+  "Condicional Se": {
+    "prefix": "se",
+    "body": [
+      "se (${1:condicao}) {",
+      "\t${2:// código}",
+      "}"
+    ],
+    "description": "Cria uma estrutura condicional básica."
+  },
+  "Declaração de Função": {
+    "prefix": "func",
+    "body": [
+      "func ${1:nome_da_funcao}(${2:parametros}) -> ${3:tipo_retorno} {",
+      "\t${0:corpo}",
+      "}"
+    ],
+    "description": "Define uma nova função com parâmetros e tipo de retorno."
+  },
+  "Declaração de Variável": {
+    "prefix": "var",
+    "body": [
+      "${1|int,real,texto,logico|} ${2:nome} := ${3:valor};"
+    ],
+    "description": "Declara uma nova variável com atribuição."
   }
 }
